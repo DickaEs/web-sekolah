@@ -1,2 +1,145 @@
-<h1>Website Sekolah SMK</h1>
-<p>Deploy otomatis berhasil</p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Sekolah SMK</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      background: rgba(255,255,255,0.1);
+      padding:50px 40px;
+      border-radius:20px;
+      backdrop-filter: blur(10px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.3);
+      color:white;
+      width:90%;
+      max-width:700px;
+      animation: fadeIn 1s ease;
+    }
+
+    h1{
+      font-size:48px;
+      margin-bottom:15px;
+      color:#ffffff;
+    }
+
+    .subtitle{
+      font-size:20px;
+      color:#dbeafe;
+      margin-bottom:30px;
+    }
+
+    .success{
+      display:inline-block;
+      background:#22c55e;
+      color:white;
+      padding:12px 25px;
+      border-radius:50px;
+      font-size:18px;
+      font-weight:bold;
+      box-shadow:0 5px 15px rgba(34,197,94,0.4);
+      animation: pulse 2s infinite;
+    }
+
+    .footer{
+      margin-top:30px;
+      font-size:14px;
+      color:#cbd5e1;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.05);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    .circle{
+      position:absolute;
+      border-radius:50%;
+      background:rgba(255,255,255,0.08);
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .circle1{
+      width:200px;
+      height:200px;
+      top:-50px;
+      left:-50px;
+    }
+
+    .circle2{
+      width:150px;
+      height:150px;
+      bottom:-40px;
+      right:-40px;
+      animation-delay:2s;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0);
+      }
+      50%{
+        transform:translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+
+  <div class="container">
+    <h1>SMK Digital School</h1>
+
+    <p class="subtitle">
+      Website sekolah modern untuk informasi, pembelajaran, dan teknologi masa depan.
+    </p>
+
+    <div class="success">
+      🚀 Deploy Otomatis Berhasil
+    </div>
+
+    <div class="footer">
+      © 2026 SMK Digital School • Powered by DevOps & Git Webhook
+    </div>
+  </div>
+
+</body>
+</html>
